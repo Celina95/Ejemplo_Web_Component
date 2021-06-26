@@ -8,6 +8,9 @@ export class MyComponent extends LitElement {
         padding: 25px;
         color: var(--my-component-text-color, #000);
       }
+      .buttonclass{
+        background-color: red;
+      }
     `;
   }
 
@@ -30,8 +33,8 @@ export class MyComponent extends LitElement {
 
   render() {
     return html`
-      <h2>${this.title} Nr. ${this.counter}!</h2>
-      <button @click=${this.__increment}>increment</button>
+      <h2>Celina Eulogio: ${this.title} Nr. ${this.counter}!</h2>
+      <button class="buttonclass" @click=${this.__increment}>Incrementando...</button>
     `;
   }
 }
